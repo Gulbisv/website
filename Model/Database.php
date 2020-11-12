@@ -12,10 +12,12 @@ class Database
             echo 'Connection error: ' . mysqli_connect_error();
         }
     }
+
     public function __destruct()
     {
         mysqli_close($this->conn);
     }
+
     public function query($sql)
     {
         return mysqli_query($this->conn, $sql);

@@ -1,83 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial;
 }
 
-.container{
+.container {
     max-width: 1920px;
     max-height: 1080px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 34.5% 65.5%;
     height: 100vh;
 }
 
-.base-container{
+.base-container {
     background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
 }
 
-.top-bar{
+.top-bar {
     height: 40px;
     margin: 9.3vh 5.21vw auto 5.21vw;
 }
 
-.top-bar ul{
+.top-bar ul {
     display: flex;
     list-style: none;
 }
 
-.top-bar li{
+.top-bar li {
     padding-left: 20px;
 }
 
-.logo-pineapple{
+.logo-pineapple {
     display: flex;
     align-items: center;
 }
 
-.text-pineapple{
+.text-pineapple {
     padding-left: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #6A707B;
 }
 
-
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cup-picture{
+.cup-picture {
     width: 44px;
     height: 70px;
     margin: 12.13vh auto auto 7.29vw;
 }
 
-.header{
+.header {
     font-family: Georgia;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 44px;
-    /* max-width: 399px; */
     min-width: 295px;
     height: 44px;
-
     margin: 2.96vh 7.29vw auto 7.29vw;
 }
 
-.paragraph{
+.paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -86,7 +83,6 @@ a{
     max-width: 400px;
     min-width: 295px;
     height: 56px;
-
     margin: 1.85vh 7.29vw auto 7.29vw;
 }
 
@@ -117,59 +113,59 @@ a{
     height: 46px;
 }
 
-#ic-fb:hover, .social-fb:hover{
+#ic-fb:hover, .social-fb:hover {
     color: #FFF;
     background-color: #4066A5;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-fb:active{
+.social-fb:active {
     background-color: #2F4A80;
 }
 
-#ic-instagram:hover, .social-instagram:hover{
+#ic-instagram:hover, .social-instagram:hover {
     color: #FFF;
     background-color: #C13584;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-instagram:active{
+.social-instagram:active {
     background-color: #8F2762;
 }
 
-#ic-twitter:hover, .social-twitter:hover{
+#ic-twitter:hover, .social-twitter:hover {
     color: #FFF;
     background-color: #1DA1F2;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-twitter:active{
+.social-twitter:active {
     background-color: #177FBF;
 }
 
-#ic-youtube:hover, .social-youtube:hover{
+#ic-youtube:hover, .social-youtube:hover {
     color: #FFF;
     background-color: #FF0000;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-youtube:active{
+.social-youtube:active {
     background-color: #CC0000;
 }
 
-li a:hover, .tos a:hover, .arrow:hover{
+li a:hover, .tos a:hover, .arrow:hover {
     color: #4066A5;
 }
 
-li a:active, .tos a:active, .arrow:active{
+li a:active, .tos a:active, .arrow:active {
     color: #233759;
 }
 
-.image-container{
+.image-container {
     background-image: url('images/image_summer.png');
     height: 100%;
     background-position: center;
@@ -177,75 +173,74 @@ li a:active, .tos a:active, .arrow:active{
     background-size: cover;
 }
 
-
-@media (max-width: 1679px){
-    .grid{
+@media (max-width: 1679px) {
+    .grid {
         grid-template-columns: 40% 60%;
     }
 }
 
 /* Tablets */
 
-@media (max-width: 1439px){
+@media (max-width: 1439px) {
     
-    .grid{
+    .grid {
           grid-template-columns: 50% 50%;
      }
 
 }
 
-@media (max-width: 1100px){
-    .grid{
+@media (max-width: 1100px) {
+    .grid {
         grid-template-columns: 55% 45%;
     }
 }
 
 /* Mobile Devices */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
    
-    .container{
+    .container {
         width: 1fr;
         background-image: url('images/image_summer.png');
         height: 1fr;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
     }
-    .top-bar{
+
+    .top-bar {
         margin: 0;
         line-height: 24px;
         height: 66px;
         background: #FFF;
     }
-    .top-bar p{
+
+    .top-bar p {
         display: none;
     }
 
-    .grid{
+    .grid {
         grid-template-columns: none;
     }
-    .image-container{
+    .image-container {
        display: none;
     }
 
-    .top-bar li{
+    .top-bar li {
         padding-right: 5px;
     }
 
-    .logo-pineapple{
+    .logo-pineapple {
         padding-left: 20px;
     }
 
-    .base-container{
+    .base-container {
         background:none;
         font-size: 14px;
         font-weight: 400;
-       
     }
 
-    .mobile-container{
+    .mobile-container {
         background: #FFF;
         width: 89.33vw;
         height: 46.69vh;
@@ -253,13 +248,13 @@ li a:active, .tos a:active, .arrow:active{
         min-height: 371px;
     }
 
-    .cup-picture{
+    .cup-picture {
         display: inline-flex;
         margin: 5.05vh auto auto 5.33vw;
 
     }
 
-    .header{
+    .header {
         display: inline-flex;
         font-size: 24px;
         line-height: 34px;
@@ -269,17 +264,17 @@ li a:active, .tos a:active, .arrow:active{
         width: 1fr;
     }
 
-    .paragraph{
+    .paragraph {
         line-height: 26px;
         height: 52px;
         margin: 1.23vh 5.33vw auto 5.33vw;
     }
 
-    .underline{
+    .underline {
         margin: 4.8vh 5.33vw auto 5.33vw;
     }
 
-    .social-container{
+    .social-container {
         display: flex;
         align-items: center;
         justify-content: space-between;

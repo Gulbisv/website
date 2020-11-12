@@ -1,7 +1,4 @@
-<?php
-
-?>
-
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,41 +9,41 @@
     <title>Pineapple</title>
 </head>
 <body>
-    <div class="container grid">
-        <div class="base-container">
-            <div class="top-bar flex">
-                <div class="logo-pineapple">
-                    <img src="assets/images/Union.png" alt="logo">
-                    <p class="text-pineapple">pineapple.</p>
-                </div>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
+<div class="container grid">
+    <div class="base-container">
+        <div class="top-bar flex">
+            <div class="logo-pineapple">
+                <img src="assets/images/Union.png" alt="logo">
+                <p class="text-pineapple">pineapple.</p>
             </div>
-            <div class="mobile-container">
-                <div class="cup-picture">
-                    <img src="assets/images/ic_success.png" alt="cup">
-                </div>
-                <div class="header">
-                    <p>Thanks for subscribing!</p>
-                </div>
-                <div class="paragraph">
-                    <p>You have successfully subscribed to our email listing. Check your email for the discount code.
-                    </p>
-                </div>
-                <div class="underline"><hr></div>
-                <div class="social-container">
-                    <a href="#" class="social-fb"><i class="fab fa-facebook-f" id="ic-fb"></i></a>
-                    <a href="#" class="social-instagram"><i class="fab fa-instagram" id="ic-instagran"></i></a>
-                    <a href="#" class="social-twitter"><i class="fab fa-twitter" id="ic-twitter"></i></a>
-                    <a href="#" class="social-youtube" id="ic-youtube"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>    
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
         </div>
-        <div class="image-container"></div>
+        <div class="mobile-container">
+            <div class="cup-picture">
+                <img src="assets/images/ic_success.png" alt="cup">
+            </div>
+            <div class="header">
+                <p>Thanks for subscribing!</p>
+            </div>
+            <div class="paragraph">
+                <p>You have successfully subscribed to our email listing. Check your email for the discount code.
+                </p>
+            </div>
+            <div class="underline"><hr></div>
+            <div class="social-container">
+                <a href="#" class="social-fb"><i class="fab fa-facebook-f" id="ic-fb"></i></a>
+                <a href="#" class="social-instagram"><i class="fab fa-instagram" id="ic-instagram"></i></a>
+                <a href="#" class="social-twitter"><i class="fab fa-twitter" id="ic-twitter"></i></a>
+                <a href="#" class="social-youtube" id="ic-youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
-<script src="../assets/main.js"></script>
+    <div class="image-container"></div>
+</div>
+<script src="assets/main.js"></script>
 </body>
 </html>

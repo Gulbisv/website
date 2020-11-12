@@ -32,12 +32,10 @@ include 'signup.php';
             <div class="paragraph">
                 <p>Subscribe to our newsletter and get 10% disscount on pineapple glasses</p>
             </div>
-            <!--    starpceļš ar serveri-->
             <form id="form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div class="input" id="input">
                     <input type="text" name="email" placeholder="Type your email address here..." id="email" value="<?php echo htmlspecialchars($_POST['email']) ?: '' ?>">
                     <button class="button-arrow" type="submit" name="submit" onclick="Redirect();"  ><i class="fas fa-arrow-right"></i></button>
-                    <!-- <a type="submit" class="arrow"><i class="fas fa-arrow-right"></i></a> -->
                     <small id="error">
                         <?php echo $exists;
                         echo $msg ;

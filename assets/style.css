@@ -1,77 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial;
 }
 
-.container{
+.container {
     max-width: 1920px;
     max-height: 1080px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 34.5% 65.5%;
     height: 100vh;
 }
 
-.base-container{
+.base-container {
     background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
 }
 
-.top-bar{
+.top-bar {
     height: 40px;
     margin: 9.3vh 5.21vw auto 5.21vw;
 }
 
-.top-bar ul{
+.top-bar ul {
     display: flex;
     list-style: none;
 }
 
-.top-bar li{
+.top-bar li {
     padding-left: 20px;
 }
 
-.logo-pineapple{
+.logo-pineapple {
     display: flex;
     align-items: center;
 }
 
-.text-pineapple{
+.text-pineapple {
     padding-left: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #6A707B;
 }
 
-
-.flex{
+.flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header{
+.header {
     font-family: Georgia;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 44px;
-    /* max-width: 399px; */
     min-width: 295px;
     height: 44px;
-
     margin: 21.7vh 7.29vw auto 7.29vw;
 }
 
-.paragraph{
+.paragraph {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -80,7 +77,6 @@ a{
     max-width: 400px;
     min-width: 295px;
     height: 56px;
-
     margin: 1.3vh 7.29vw auto 7.29vw;
 }
 
@@ -102,7 +98,7 @@ a{
     margin: 4.63vh auto auto 5.21vw;
 }
 
-.input small{
+.input small {
     color: rgb(255, 0, 0);
     position: absolute;
 	bottom: 0;
@@ -111,8 +107,7 @@ a{
     font-size: 10px;
 }
 
-
-.button-arrow{
+.button-arrow {
     background: none;
     border: none;
     padding-right: 1.46vw;
@@ -183,60 +178,60 @@ a{
     height: 46px;
 }
 
-#ic-fb:hover, .social-fb:hover{
+#ic-fb:hover, .social-fb:hover {
     color: #FFF;
     background-color: #4066A5;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-fb:active{
+.social-fb:active {
     background-color: #2F4A80;
 }
 
-#ic-instagram:hover, .social-instagram:hover{
+#ic-instagram:hover, .social-instagram:hover {
     color: #FFF;
     background-color: #C13584;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-instagram:active{
+.social-instagram:active {
     background-color: #8F2762;
 }
 
-#ic-twitter:hover, .social-twitter:hover{
+#ic-twitter:hover, .social-twitter:hover {
     color: #FFF;
     background-color: #1DA1F2;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-twitter:active{
+.social-twitter:active {
     background-color: #177FBF;
 }
 
-#ic-youtube:hover, .social-youtube:hover{
+#ic-youtube:hover, .social-youtube:hover {
     color: #FFF;
     background-color: #FF0000;
     box-shadow: 5px 10px 10px #aaaaaa;
     border: none;
 }
 
-.social-youtube:active{
+.social-youtube:active {
     background-color: #CC0000;
 }
 
-li a:hover, .tos a:hover, .button-arrow:hover{
+li a:hover, .tos a:hover, .button-arrow:hover {
     color: #4066A5;
 }
 
-li a:active, .tos a:active, .button-arrow:active{
+li a:active, .tos a:active, .button-arrow:active {
     color: #233759;
 }
 
 
-.image-container{
+.image-container {
     background-image: url('images/image_summer.png');
     height: 100%;
     background-position: center;
@@ -245,37 +240,37 @@ li a:active, .tos a:active, .button-arrow:active{
 }
 
 
-@media (max-width: 1679px){
-    .grid{
+@media (max-width: 1679px) {
+    .grid {
         grid-template-columns: 40% 60%;
     }
 }
 
 /* Tablets */
 
-@media (max-width: 1439px){
+@media (max-width: 1439px) {
     
-    .grid{
+    .grid {
           grid-template-columns: 50% 50%;
      }
 
 }
 
-@media (max-width: 1024px){
-    .grid{
+@media (max-width: 1024px) {
+    .grid {
         grid-template-columns: 55% 45%;
     }
 
-    .text-pineapple{
+    .text-pineapple {
         display: none;
     }
 }
 
 /* Mobile Devices */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
    
-    .container{
+    .container {
         width: 1fr;
         background-image: url('images/image_summer.png');
         height: 1fr;
@@ -284,40 +279,39 @@ li a:active, .tos a:active, .button-arrow:active{
         background-size: cover;
         
     }
-    .top-bar{
+    .top-bar {
         margin: 0;
         line-height: 24px;
         height: 66px;
         background: #FFF;
 
     }
-    .top-bar p{
+    .top-bar p {
         display: none;
     }
 
-    .grid{
+    .grid {
         grid-template-columns: none;
     }
-    .image-container{
+    .image-container {
        display: none;
     }
 
-    .top-bar li{
+    .top-bar li {
         padding-right: 5px;
     }
 
-    .logo-pineapple{
+    .logo-pineapple {
         padding-left: 20px;
     }
 
-    .base-container{
+    .base-container {
         background:none;
         font-size: 14px;
         font-weight: 400;
-       
     }
 
-    .mobile-container{
+    .mobile-container {
         background: #FFF;
         width: 89.33vw;
         height: 46.69vh;
@@ -325,7 +319,7 @@ li a:active, .tos a:active, .button-arrow:active{
         min-height: 371px;
     }
 
-    .header{
+    .header {
         display: inline-flex;
         font-size: 24px;
         line-height: 34px;
@@ -335,32 +329,31 @@ li a:active, .tos a:active, .button-arrow:active{
         width: 1fr;
     }
 
-    .paragraph{
+    .paragraph {
         line-height: 26px;
         height: 52px;
         margin: 1.23vh 5.33vw auto 5.33vw;
-
     }
 
-    .input{
+    .input {
         height: 60px;
         padding-left: 15px;
         font-size: 16px;
         margin: 2.46vh 5.33vw auto 5.33vw;
     }
 
-    .tos{
+    .tos {
         line-height: 28px;
         height: 28px;
         font-size: 16px;
         margin: 2.46vh 5.33vw auto 5.33vw;
     }
 
-    .underline{
+    .underline {
         margin: 2.46vh 5.33vw auto 5.33vw;
     }
 
-    .social-container{
+    .social-container {
         display: flex;
         align-items: center;
         justify-content: space-between;

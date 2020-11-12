@@ -8,27 +8,27 @@ form.addEventListener('submit', (e)=>{
     checkInputs();
 })
 
-function checkInputs(){
+function checkInputs() {
     const emailValue = email.value.trim();
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setErrorFor(email, 'Email address is required');
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Please provide a valid e-mail address');
-    }else if (emailValue.substr(emailValue.length-3,emailValue.length)==='.co'){
-        setErrorFor(email, 'We are not accepting subscriptions from Columbia email')
-    } else if (checkbox.checked === false){
-        setErrorFor(email, 'You must accept the terms and conditions')
+    }else if (emailValue.substr(emailValue.length-3,emailValue.length)==='.co') {
+        setErrorFor(email, 'We are not accepting subscriptions from Columbia email');
+    } else if (checkbox.checked === false) {
+        setErrorFor(email, 'You must accept the terms and conditions');
     } else {
        setSuccessFor(email, message = '');
     }
 }
 
-function setErrorFor(small, message){
+function setErrorFor(small, message) {
     errorElement.innerText = message;
 }
 
-function setSuccessFor(small, message){
+function setSuccessFor(small, message) {
     errorElement.innerText = message;
 }
 
