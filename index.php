@@ -35,7 +35,7 @@ include 'signup.php';
             <form id="form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                 <div class="input" id="input">
                     <input type="text" name="email" placeholder="Type your email address here..." id="email" value="<?php echo htmlspecialchars($_POST['email']) ?: '' ?>">
-                    <button class="button-arrow" type="submit" name="submit" onclick="Redirect();"  ><i class="fas fa-arrow-right"></i></button>
+                    <button class="button-arrow" type="submit" name="submit" ><i class="fas fa-arrow-right"></i></button>
                     <small id="error">
                         <?php echo $exists;
                         echo $msg ;

@@ -4,8 +4,9 @@ const checkbox = document.getElementById('checkbox');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    checkInputs();
+    if (!checkInputs()){
+        e.preventDefault();
+    }
 })
 
 function checkInputs() {
@@ -13,15 +14,18 @@ function checkInputs() {
 
     if (emailValue === '') {
         setErrorFor(email, 'Email address is required');
+        return false;
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, 'Please provide a valid e-mail address');
+        return false;
     }else if (emailValue.substr(emailValue.length-3,emailValue.length)==='.co') {
         setErrorFor(email, 'We are not accepting subscriptions from Columbia email');
+        return false;
     } else if (checkbox.checked === false) {
         setErrorFor(email, 'You must accept the terms and conditions');
-    } else {
-       setSuccessFor(email, message = '');
+        return false;
     }
+    return true;
 }
 
 function setErrorFor(small, message) {

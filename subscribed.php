@@ -44,6 +44,5 @@
     </div>
     <div class="image-container"></div>
 </div>
-<script src="assets/main.js"></script>
 </body>
 </html>
