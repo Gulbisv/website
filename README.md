@@ -1,4 +1,3 @@
-# Magebit Uzdevums
 
 1) Galvenā lapa ar html kodu atrodas - index.php un tās stils style.css
 
