@@ -15,5 +15,4 @@
 
 8) delete.php - kods datu izdzēšanai no datubāzes
 
-9
 
